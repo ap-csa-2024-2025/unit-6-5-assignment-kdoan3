@@ -10,7 +10,17 @@ public class Main
 
   public static void reverse(String[] arr)
   {
+    String reversed = " ";
 
+    for (int elem : arr)
+    {
+      for (int i = 0; i < arr.length; i++)
+      {
+        String letter = arr[i].substring(i, i+1)
+        reversed = letter + reversed;
+      }
+    }
+    return reversed;
   }
 
   public int product(int[] arr)
