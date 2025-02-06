@@ -25,11 +25,22 @@ public class Main
 
   public int product(int[] arr)
   {
-    return 0;
+    int product = 1;
+    for (int elem :  arr)
+    {
+      product *= elem;
+    }
+    return product;
   }
 
   public double average(double[] arr)
   {
-    return 0.0;
+    double sum = 0;
+    for (double elem : arr)
+    {
+      sum += elem;
+    }
+    return sum/arr.length;
   }
+
 }
